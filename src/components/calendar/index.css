@@ -1,0 +1,79 @@
+.custom-calendar {
+	width: 100%; /* Adjust width as needed */
+	background-color: white; /* Background color */
+	border-radius: 10px; /* Rounded corners */
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+	position: relative;
+	padding: 20px; /* Padding inside the calendar */
+}
+
+.react-calendar {
+	width: 100%; /* Full-width calendar */
+	border: none; /* Remove border */
+}
+
+.react-calendar__navigation {
+	justify-content: center; /* Center navigation */
+	.react-calendar__navigation__label {
+		flex-grow: 0 !important;
+	}
+}
+
+.react-calendar__month-view__weekdays {
+	color: black;
+}
+
+.react-calendar__tile--now {
+	background-color: #FFF4F1 !important; /* White background for today's date */
+}
+
+.react-calendar__tile--active {
+	border-radius: 10px !important; /* No rounded corners for active tile */
+}
+.react-calendar__month-view__days {
+	gap: 10px;
+	button {
+		flex-basis: calc((100% - 60px) / 7) !important;
+		box-sizing: border-box; /* Ensures padding and border are included in width */
+		border: 1px solid #ccc;
+		abbr {
+			display: none !important;
+		}
+	}
+}
+
+.react-calendar__tile {
+	height: 40px; /* Cell height */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px; /* Font size for date numbers */
+	background-color: transparent; /* Transparent background */
+	border: none; /* No borders */
+}
+
+.react-calendar__tile--active {
+	background-color: #f0a500; /* Background for active tile */
+	color: white; /* Font color */
+	border-radius: 50%; /* Round active tile */
+}
+
+.react-calendar__tile--now {
+	background-color: #f9c0c0; /* Background for today's date */
+	color: #333; /* Font color for today's date */
+}
+
+.react-calendar__tile--disabled {
+	color: #ccc; /* Color for disabled dates */
+}
+
+.react-calendar__navigation {
+	margin-bottom: 20px; /* Space below the navigation */
+}
+
+.react-calendar__navigation button {
+	background: none; /* No background */
+	border: none; /* No border */
+	color: #333; /* Text color */
+	font-size: 18px; /* Font size for month navigation */
+}

@@ -1,0 +1,42 @@
+.activity-card {
+    position: relative;
+    width: 33%; /* Adjust as needed */
+    height: 140px;
+    @media (min-width: 1024px) {
+        height: 200px; /* Adjust as needed */
+    }
+    overflow: hidden;
+}
+
+.activity-card .text {
+    position: static;
+    font-size: 20px;
+    color: white; /* Text color */
+    text-align: center;
+    @media (min-width: 1024px) {
+        opacity: 0;
+        position: absolute;
+        bottom: -30px; /* Initially position text out of view */
+        left: 50%;
+        transform: translateX(-50%);
+        transition: bottom 0.3s, opacity 0.3s;
+    }
+}
+
+.activity-card:hover .text {
+    bottom: 50%; /* Move to center position */
+    opacity: 1; /* Fade in text */
+    color: white; /* Change text color on hover */
+}
+
+.light {
+    width: 100%;
+    background-color: #FFFFFF4D;
+    height: 1px;
+}
+
+.activity-card:hover .light {
+    background-color: white;
+    height: 4px;
+    box-shadow: 0 2px 30px 20px rgba(255, 255, 255, 0.5); /* Increased blur and spread for hover */
+}
