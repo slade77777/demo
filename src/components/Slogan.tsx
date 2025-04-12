@@ -28,14 +28,12 @@ const Slogan = () => {
 				src={heroVideo}
 				className="w-full h-screen md:h-[70vh] xl:h-[130vh] object-cover"
 				autoPlay
-				loop={false}
+				loop
 				muted
 			/>
 
-			{/* Toolbar */}
 			<div className="absolute bottom-0 left-0 lg:left-[15vw] w-full lg:w-[70%] bg-transparent bg-opacity-50 text-white">
-				<div className="flex justify-between items-center px-4 relative">
-					{/* Icon 1 */}
+				<div className="flex justify-between items-center px-4">
 					<Item logo={mountain} index={1} />
 					<Item logo={fishing} index={2} />
 					<Item logo={crosshair} index={3} />

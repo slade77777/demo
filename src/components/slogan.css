@@ -1,6 +1,6 @@
 .activity-card {
     position: relative;
-    width: 33%; /* Adjust as needed */
+    width: 33.3%; /* Adjust as needed */
     height: 140px;
     @media (min-width: 1024px) {
         height: 200px; /* Adjust as needed */

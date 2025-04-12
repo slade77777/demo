@@ -47,9 +47,18 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 16px; /* Font size for date numbers */
+	font-size: 14px; /* Font size for date numbers */
 	background-color: transparent; /* Transparent background */
 	border: none; /* No borders */
+	@media (min-width: 768px) {
+		height: 60px; /* Smaller height for mobile */
+		font-size: 16px; /* Smaller font size for mobile */
+	}
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+	background-color: #F5F5F5 !important;
+	border-color: #DFDFDF !important;
 }
 
 .react-calendar__tile--active {
