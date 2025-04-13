@@ -3,6 +3,7 @@ import mountain from "../assets/Mountains (1).svg";
 import fishing from "../assets/fishing(1).svg";
 import crosshair from "../assets/Crosshair-32px.svg";
 import chat from "../assets/Chats icon.svg";
+import hero from "../assets/Hero.png";
 import { useTranslation } from "react-i18next";
 import "./Slogan.css";
 
@@ -30,6 +31,8 @@ const Slogan = () => {
 				autoPlay
 				loop
 				muted
+				poster={hero}
+				preload="auto"
 			/>
 
 			<div className="absolute bottom-0 left-0 lg:left-[15vw] w-full lg:w-[70%] bg-transparent bg-opacity-50 text-white">
