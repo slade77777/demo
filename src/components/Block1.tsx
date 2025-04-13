@@ -1,8 +1,8 @@
 import menu1 from "../assets/part1.png";
 import menu2 from "../assets/part2.png";
 import menu3 from "../assets/part3.png";
-import arrow from "../assets/ArrowUpRight.svg";
 import { useTranslation } from "react-i18next";
+import AnimationButton from "./button/AnimationButton.tsx";
 
 const data = [
 	{
@@ -43,15 +43,12 @@ const Block1 = () => {
 								{t(`bloc_1.cases.${index}.category`)}
 							</h3>
 							<p className="text-gray-600 mt-2 text-left">
-								{t(`bloc_1.cases.${index}.cta`)}
+								{t(`bloc_1.cases.${index}.tagline`)}
 							</p>
 							<p className="text-gray-600 mt-2 text-left line-clamp-2">
 								{t(`bloc_1.cases.${index}.description`)}
 							</p>
-							<div className="mt-4 text-black hover:text-white px-4 py-2 rounded-3xl bg-white hover:bg-[#F2542D] border-solid border-[1px] border-gray-500 flex gap-x-2 items-center">
-								{t("forfait")} {index + 1}
-								<img src={arrow} alt="Card 2" className="w-5 h-5" />
-							</div>
+							<AnimationButton index={index} />
 						</div>
 					</div>
 				))}

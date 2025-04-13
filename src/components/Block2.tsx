@@ -184,7 +184,7 @@ const Block2 = ({ positions }: { positions: any }) => {
 						<div
 							// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 							key={index}
-							className="flex flex-row items-center rounded-3xl hover:bg-[#F2542D99] md:rounded-[40px] gap-x-2 lg:gap-x-4 border-solid border-2 border-gray-500 hover:bg-[#F2542D] p-2 md:p-4"
+							className="flex flex-row items-center rounded-3xl hover:bg-[#F2542D99] md:rounded-[40px] gap-x-2 lg:gap-x-4 border-solid border-2 border-gray-500 hover:bg-[#F2542D] p-2"
 						>
 							<img
 								src={item.icon}

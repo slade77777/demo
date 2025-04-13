@@ -135,7 +135,9 @@ const Block5 = () => {
                   <img src={instagram} className="w-5 h-5"/>
                   <span>{t(`bloc_5.reviews.${index + 1}.author`)}</span>
                 </div>
-                <img src={arrow} className="w-5 h-5"/>
+                <div className="hover:bg-[#333333] rounded-full p-2">
+                  <img src={arrow} className="w-5 h-5"/>
+                </div>
               </div>
             </div>
           ))}

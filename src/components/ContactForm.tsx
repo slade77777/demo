@@ -65,10 +65,10 @@ const ContactForm = () => {
         />
       </div>
       <div className="flex gap-x-4 justify-end">
-        <div className="mt-4 cursor-pointer text-black px-8 py-2 rounded-3xl bg-white border-solid border-[1px] border-gray-500 flex gap-x-2 items-center">
+        <div className="mt-4 cursor-pointer text-black px-8 py-2 rounded-3xl bg-white hover:bg-red-100 border-solid border-[1px] border-gray-500 flex gap-x-2 items-center">
           {t("bloc_2_2.btn_5")}
         </div>
-        <div className="mt-4 cursor-pointer text-white px-8 py-2 rounded-3xl bg-[#F2542D] border-solid border-[1px] border-gray-500 flex gap-x-2 items-center">
+        <div className="mt-4 cursor-pointer text-white px-8 py-2 rounded-3xl bg-[#F2542D] hover:bg-red-600 border-solid border-[1px] border-gray-500 flex gap-x-2 items-center">
           {t("bloc_2_2.btn_6")}
           <img src={submit} alt="Card 2" className="w-5 h-5" />
         </div>

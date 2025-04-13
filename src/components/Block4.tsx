@@ -64,7 +64,7 @@ const Block4 = () => {
     setIsHovered(false);
   };
 
-  return <section className="p-6" data-aos="flip-up">
+  return <section className="p-6 xl:p-0 xl:mt-16" data-aos="flip-up">
     <div className="flex items-center justify-between">
       <h2 className="text-center text-3xl font-bold md:text-left text-[#F2542D]">{t('bloc_3.title')}</h2>
       <div
