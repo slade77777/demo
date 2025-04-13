@@ -19,7 +19,7 @@ const data = [
 const Block1 = () => {
 	const { t } = useTranslation();
 	return (
-		<section className="text-center py-10" data-aos="flip-up">
+		<section className="text-center pt-10" data-aos="flip-up">
 			<div className="flex flex-row w-full items-center justify-between">
 				<div className="bg-gray-500 h-[1px] w-1/3" />
 				<h1 className="text-4xl font-bold text-[#F2542D]">{t("bloc_1.title")}</h1>

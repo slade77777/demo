@@ -36,7 +36,6 @@ function App() {
 					frResponse.json(),
 					enResponse.json(),
 				]);
-				console.log(frLabels);
 				const positionFr = frLabels[0].carte_point;
 				const positionEn = enLabels[0].carte_point;
 				setPositions({
